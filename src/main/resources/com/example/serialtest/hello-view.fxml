@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<SplitPane
+        dividerPositions="0.6692667706708268" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+           minWidth="-Infinity" orientation="VERTICAL" prefHeight="643.0" prefWidth="984.0"
+           xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+    <items>
+        <LineChart prefHeight="400.0" prefWidth="950.0" title="Scope">
+            <xAxis>
+                <CategoryAxis side="BOTTOM"/>
+            </xAxis>
+            <yAxis>
+                <NumberAxis side="LEFT"/>
+            </yAxis>
+        </LineChart>
+        <HBox alignment="CENTER" prefHeight="218.0" prefWidth="982.0" spacing="15.0">
+            <children>
+                <VBox prefHeight="200.0" prefWidth="100.0" spacing="5.0" HBox.hgrow="ALWAYS">
+                    <children>
+                        <Button fx:id="onButton" mnemonicParsing="false" prefHeight="26.0"
+                                prefWidth="58.0" text="ON"/>
+                        <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="60.0" text="OFF"/>
+                        <Button mnemonicParsing="false" text="Button"/>
+                    </children>
+                    <padding>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+                    </padding>
+                </VBox>
+                <Separator orientation="VERTICAL" prefHeight="200.0" HBox.hgrow="ALWAYS"/>
+                <VBox alignment="BASELINE_LEFT" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS"/>
+                <Separator orientation="VERTICAL" prefHeight="200.0" HBox.hgrow="ALWAYS"/>
+                <VBox prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS"/>
+            </children>
+        </HBox>
+    </items>
+</SplitPane>
